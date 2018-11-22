@@ -10,17 +10,13 @@
   </div>
 </div>
 
-<!-- Ransack Code start -->
 <div class="row">
   <div class="col-md-12 mb-3">
     <%= render partial: "child_templates/children_search_form" %>
   </div>
 </div>
-<!-- Ransack Code end -->
 
-<!-- Location Map Code start -->
 
-<!-- Location Map Code end -->
 
 <hr>
 
@@ -54,35 +50,25 @@
 
       <% @children.each do |child| %>
       <tr>
-        <!-- Display child.id start -->
         <td>
           <%= child.id %>
         </td>
-        <!-- Display child.id end -->
 
-        <!-- Display child.children_id start -->
         <td>
           <%= child.children_id %>
         </td>
-        <!-- Display child.children_id end -->
 
-        <!-- Display child.children_date start -->
         <td>
           <%= child.children_date %>
         </td>
-        <!-- Display child.children_date end -->
 
-        <!-- Display child.created_at start -->
         <td>
           <%= time_ago_in_words(child.created_at) %> ago
         </td>
-        <!-- Display child.created_at end -->
 
-        <!-- Display child.updated_at start -->
         <td>
           <%= time_ago_in_words(child.updated_at) %> ago
         </td>
-        <!-- Display child.updated_at end -->
 
         <td>
           <a href="/children/<%= child.id %>">

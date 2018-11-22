@@ -11,62 +11,48 @@
         </a>
       </div>
 
-      <!-- Edit link child start -->
       <div class="col">
         <a href="/children/<%= @child.id %>/edit" class="btn btn-block btn-outline-secondary">
           Edit child
         </a>
       </div>
-      <!-- Edit link child end -->
 
-      <!-- Delete link child start -->
       <div class="col">
         <a href="/delete_child/<%= @child.id %>" class="btn btn-block btn-outline-secondary">
           Delete child
         </a>
       </div>
-      <!-- Delete link child end -->
     </div>
 
     <dl>
       <dt>
         Children
       </dt>
-      <!-- Display children_id start -->
       <dd>
         <%= @child.children_id %>
       </dd>
-      <!-- Display children_id end -->
 
       <dt>
         Children date
       </dt>
-      <!-- Display children_date start -->
       <dd>
         <%= @child.children_date %>
       </dd>
-      <!-- Display children_date end -->
 
       <dt>
         Created at
       </dt>
-      <!-- Display created_at start -->
       <dd>
         <%= time_ago_in_words(@child.created_at) %> ago
       </dd>
-      <!-- Display created_at end -->
 
       <dt>
         Updated at
       </dt>
-      <!-- Display updated_at start -->
       <dd>
         <%= time_ago_in_words(@child.updated_at) %> ago
       </dd>
-      <!-- Display updated_at end -->
     </dl>
   </div>
 </div>
 
-<!-- Show Page Customization starts -->
-<!-- Show Page Customization end -->

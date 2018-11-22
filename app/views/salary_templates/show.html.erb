@@ -11,71 +11,55 @@
         </a>
       </div>
 
-      <!-- Edit link salary start -->
       <div class="col">
         <a href="/salaries/<%= @salary.id %>/edit" class="btn btn-block btn-outline-secondary">
           Edit salary
         </a>
       </div>
-      <!-- Edit link salary end -->
 
-      <!-- Delete link salary start -->
       <div class="col">
         <a href="/delete_salary/<%= @salary.id %>" class="btn btn-block btn-outline-secondary">
           Delete salary
         </a>
       </div>
-      <!-- Delete link salary end -->
     </div>
 
     <dl>
       <dt>
         Monthly wage
       </dt>
-      <!-- Display monthly_wage start -->
       <dd>
         <%= @salary.monthly_wage %>
       </dd>
-      <!-- Display monthly_wage end -->
 
       <dt>
         Monthly benefits
       </dt>
-      <!-- Display monthly_benefits start -->
       <dd>
         <%= @salary.monthly_benefits %>
       </dd>
-      <!-- Display monthly_benefits end -->
 
       <dt>
         Month
       </dt>
-      <!-- Display month_id start -->
       <dd>
         <%= @salary.month_id %>
       </dd>
-      <!-- Display month_id end -->
 
       <dt>
         Created at
       </dt>
-      <!-- Display created_at start -->
       <dd>
         <%= time_ago_in_words(@salary.created_at) %> ago
       </dd>
-      <!-- Display created_at end -->
 
       <dt>
         Updated at
       </dt>
-      <!-- Display updated_at start -->
       <dd>
         <%= time_ago_in_words(@salary.updated_at) %> ago
       </dd>
-      <!-- Display updated_at end -->
     </dl>
   </div>
 </div>
 
-<!-- Show Page Customization starts -->
-<!-- Show Page Customization end -->

@@ -4,45 +4,31 @@
 
 <hr>
 
-<!-- Form salary start -->
 <form action="/update_salary/<%= @salary.id %>" method="post">
-<!-- Form salary end -->
 
-  <!-- Label and input for monthly_wage start -->
   <div class="form-group">
     <label for="monthly_wage">
       Monthly wage
     </label>
 
-    <!-- Input for monthly_wage start -->
     <input type="text" id="monthly_wage" name="monthly_wage" class="form-control" value="<%= @salary.monthly_wage %>">
-    <!-- Input for monthly_wage end -->
   </div>
-  <!-- Label and input for monthly_wage end -->
 
-  <!-- Label and input for monthly_benefits start -->
   <div class="form-group">
     <label for="monthly_benefits">
       Monthly benefits
     </label>
 
-    <!-- Input for monthly_benefits start -->
     <input type="text" id="monthly_benefits" name="monthly_benefits" class="form-control" value="<%= @salary.monthly_benefits %>">
-    <!-- Input for monthly_benefits end -->
   </div>
-  <!-- Label and input for monthly_benefits end -->
 
-  <!-- Label and input for month_id start -->
   <div class="form-group">
     <label for="month_id">
       Month
     </label>
 
-    <!-- Input for month_id start -->
     <input type="text" id="month_id" name="month_id" class="form-control" value="<%= @salary.month_id %>">
-    <!-- Input for month_id end -->
   </div>
-  <!-- Label and input for month_id end -->
 
   <button class="btn btn-block btn-outline-secondary">
     Update salary
