@@ -1,6 +1,6 @@
 class ChildrenController < ApplicationController
   def index
-    @children = Child.all
+    @children = Child.page(params[:page]).per(10)
 
     render("child_templates/index.html.erb")
   end

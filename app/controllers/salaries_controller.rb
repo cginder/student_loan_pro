@@ -1,6 +1,6 @@
 class SalariesController < ApplicationController
   def index
-    @salaries = Salary.all
+    @salaries = Salary.page(params[:page]).per(10)
 
     render("salary_templates/index.html.erb")
   end
