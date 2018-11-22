@@ -1,6 +1,7 @@
 class SalariesController < ApplicationController
   def index
-    @salaries = Salary.page(params[:page]).per(10)
+    @q = Salary.ransack(params[:q])
+    @salaries = @q.result(:distinct => true).page(params[:page]).per(10)
 
     render("salary_templates/index.html.erb")
   end
