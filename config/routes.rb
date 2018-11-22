@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root :to => "salaries#index"
   # Routes for the Child resource:
 
   # CREATE
