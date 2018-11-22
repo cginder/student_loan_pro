@@ -1,4 +1,6 @@
 ActiveAdmin.register Salary do
+
+ permit_params :monthly_wage, :monthly_benefits, :month_id
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
